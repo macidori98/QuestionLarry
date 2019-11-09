@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "117172290848",
+    "firebase_url": "https://questionlarryformdata.firebaseio.com",
+    "project_id": "questionlarryformdata",
+    "storage_bucket": "questionlarryformdata.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117172290848:android:40f6b9f47e902b86938345",
+        "android_client_info": {
+          "package_name": "com.example.questionlarry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "117172290848-kgm4uqe48ge5hn1rmpctk6tmvmcs2r1q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvw75qu0edEdIub0BxtTdiG51m3IIF12g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "117172290848-kgm4uqe48ge5hn1rmpctk6tmvmcs2r1q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
