@@ -48,18 +48,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="3dp">
-
-        <RadioButton
-            android:id="@+id/radioButton_male"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/male" />
-
-        <RadioButton
-            android:id="@+id/radioButton_female"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/female" />
     </RadioGroup>
 
     <TextView
@@ -68,10 +56,11 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="3dp"/>
 
-    <FrameLayout
+    <LinearLayout
         android:id="@+id/checkbox_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
 
     <Spinner
         android:id="@+id/spinner_department"
@@ -90,30 +79,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="3dp">
-
-        <RadioButton
-            android:id="@+id/radioButton_first"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/first" />
-
-        <RadioButton
-            android:id="@+id/radioButton_second"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/second" />
-
-        <RadioButton
-            android:id="@+id/radioButton_third"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/third" />
-
-        <RadioButton
-            android:id="@+id/radioButton_fourth"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/fourth" />
     </RadioGroup>
 
     <EditText

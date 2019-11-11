@@ -3,9 +3,12 @@ package com.example.questionlarry;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.widget.Toast;
 
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 
 import java.util.Calendar;
 
@@ -22,9 +25,8 @@ public class DatePickerFragment extends DialogFragment {
         this.day = c.get(Calendar.DAY_OF_MONTH);
 
         DatePickerDialog dpd = new DatePickerDialog(getActivity(), dateSetListener, year, month, day);
-        /*LoginActivity la = new LoginActivity();
-        la.tv_birthDate.setText(getYear() + " " + getMonth() + " " + getDay());*/
-        //Toast.makeText(getContext(), getYear(), Toast.LENGTH_SHORT).show();
+
+
         return dpd;
     }
 
@@ -32,23 +34,10 @@ public class DatePickerFragment extends DialogFragment {
     private DatePickerDialog.OnDateSetListener dateSetListener = new DatePickerDialog.OnDateSetListener() {
         @Override
         public void onDateSet(android.widget.DatePicker datePicker, int i, int i1, int i2) {
-            MainActivity la = (MainActivity) getActivity();
+            Toast.makeText(getContext(), i + " " + i1 + " " + i2, Toast.LENGTH_SHORT).show();
+            MainActivity ma = (MainActivity)getActivity();
+            ma.DATE = i + " " + i1 + " " + i2;
         }
-
-        /*public void onDateSet(DatePicker view, int year, int month, int day) {
-
-            //la.tv_birthDate.setText(view.getYear() + " " + (view.getMonth()+1) + " " + view.getDayOfMonth());
-        }*/
     };
-
-    public String getYear() {
-        return String.valueOf(year);
-    }
-
 }
 
-/*public void showDatePicker(View v) {
-        newFragment = new DatePickerFragment();
-        newFragment.show(getSupportFragmentManager(), "date picker");
-        //Toast.makeText(this, newFragment.toString(), Toast.LENGTH_SHORT).show();
-    }*/

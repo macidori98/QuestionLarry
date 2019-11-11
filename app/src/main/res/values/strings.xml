@@ -6,18 +6,22 @@
     <string name="name">Enter your name</string>
     <string name="date_picker">Birth date pick</string>
     <string name="location">Choose your location</string>
-    <string name="gender">Choose your gander</string>
-    <string name="male">Male</string>
-    <string name="female">Female</string>
+    <string name="gender">Choose your gender</string>
     <string name="hobby">Choose your hobbies</string>
     <string name="department">Choose your department</string>
     <string name="year_study">Year of study</string>
     <string name="expectations">Expectations</string>
     <string name="submit">Submit</string>
-    <string name="first">I</string>
-    <string name="second">II</string>
-    <string name="third">III</string>
-    <string name="fourth">IV</string>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="yearOfStudy">
+        <item>I</item>
+        <item>II</item>
+        <item>III</item>
+        <item>IV</item>
+    </string-array>
     <string-array name="location">
         <item>Marosvasarhely</item>
         <item>Nagyenyed</item>
